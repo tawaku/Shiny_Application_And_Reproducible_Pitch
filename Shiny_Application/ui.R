@@ -14,6 +14,11 @@ shinyUI(fluidPage(
 
     # Application title
     titlePanel('K-means Clustering - US Arrests'),
+    
+    # Application description
+    h3('how to use this app.'),
+    p('This app shows clusters for arrests per 100,000 residents for assault, murder, and rape in each of the 50 US states in 1973. 4 variables are compressed with PCA to draw as plot.'),
+    p('You can configure the number of clusters by changing the slider in side navigation.'),
 
     # Sidebar with a slider input for number of clusters
     sidebarLayout(
