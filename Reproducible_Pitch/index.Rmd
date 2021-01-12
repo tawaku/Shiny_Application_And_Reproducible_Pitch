@@ -1,0 +1,44 @@
+---
+title       : K-means Clustering - US Arrests
+author      : tawaku
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : [bootstrap]   # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Application
+
+<iframe src="https://tawaku.shinyapps.io/shiny_application/" scrolling="yes" frameBorder="0"></iframe>
+
+---
+
+## Usability
+- Easy to use
+    - Only one slider is provided to use this application.
+    - Visualize clusters clearly with Factextra library.
+    - 4 variables in dataset are compressed and plotted in 2D.
+
+---
+
+## Data
+Application used USArrests dataset.
+This data set contains statistics, in arrests per 100,000 residents for assault, murder, and rape in each of the 50 US states in 1973. Also given is the percent of the population living in urban areas.
+
+```{r}
+data('USArrests')
+head(USArrests)
+```
+
+---
+
+## Plot
+#### ```Factextra``` library is used to plot cluster.
+
+![Factextra Cluster](https://rpkgs.datanovia.com/factoextra/tools/README-partitioning-clustering-1.png "Partitioning Clustering Plot")
+
+##### *"Extract and Visualize the Results of Multivariate Data Analyses", Alboukadel Kassambara, January 12, 2021, https://rpkgs.datanovia.com/factoextra/index.html*
+
+!---
